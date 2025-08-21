@@ -11,9 +11,9 @@ This repository contains multiple **Bollinger Bands–based trading strategies**
 
 Bollinger Bands are a volatility-based technical indicator consisting of:
 
-* **Middle Band** → Moving Average (usually 20-period SMA).
-* **Upper Band** → Middle Band + (k × standard deviation).
-* **Lower Band** → Middle Band – (k × standard deviation).
+* **Middle Band** → Moving Average (20-period SMA).
+* **Upper Band** → Middle Band + (2 x standard deviation).
+* **Lower Band** → Middle Band – (2 x standard deviation).
 
 They expand and contract based on volatility and are widely used for spotting overbought/oversold conditions, reversals, and trend continuations.
 
@@ -33,43 +33,11 @@ They expand and contract based on volatility and are widely used for spotting ov
 
 ## ⚙️ Features
 
-* Different Bollinger Band–based strategies.
+* Different Bollinger Band–based strategies with minor variations.
 * Fixed and trailing stop-loss implementations.
 * Backtesting framework for trade evaluation.
 * Equity curve and PnL visualization.
 * Comparison of stop-loss multipliers and strategy performance.
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/bollinger-bands-strategies.git
-cd bollinger-bands-strategies
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-**Commonly used libraries:**
-
-* `pandas` – Data handling
-* `numpy` – Numerical calculations
-* `matplotlib` / `plotly` – Visualizations
-* `ta` – Technical indicators
-
-### 3. Run the Notebooks
-
-```bash
-jupyter notebook
-```
-
-Open any of the strategy notebooks and run them step by step.
 
 ---
 
